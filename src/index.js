@@ -2,27 +2,46 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Triangle from './js/triangle.js';
-import Rectangle from './js/rectangle.js';
+import SGC from './js/SGC.js';
 
-
-
-$(document).ready(function () {
-  $("#triangle-checker-form").submit(function (event) {
-    event.preventDefault();
-    const length1 = $("#length1").val();
-    const length2 = $("#length2").val();
-    const length3 = $("#length3").val();
-    const triangle = new Triangle(length1, length2, length3);
-    const response = triangle.checkType();
-    $("#response").append("<p>" + response + "</p>");
-  });
-  $('#rectangle-area-form').submit(function(event) {
-    event.preventDefault();
-    const length1 = parseInt($('#rect-length1').val());
-    const length2 = parseInt($('#rect-length2').val());
-    const rectangle = new Rectangle(length1, length2);
-    const response = rectangle.getArea();
-    $('#response2').append(`<p> The area of the rectangle is ${response}.</p>`);
+let calc;
+$("#galactic-age").submit(function(event) {
+  event.preventDefault();
+  calc = new SuperGalacticAgeCalculator($('#age').val());
 });
+$("#earth-life-expectancy").on("click", function() {
+  calc.lifeExpectancy();
+  $('.earth-expectancy').text(calc.planetExpectancy);
+});
+$("#mercury-years").on("click", function() {
+  calc.mercuryYears();
+  $('.mercury-years').text(calc.planetYears);
+});
+$("#mercury-life-expectancy").on("click", function() {
+  calc.mercuryLifeExpectancy();
+  $('.mercury-expectancy').text(calc.planetExpectancy);
+});
+$("#venus-years").on("click", function() {
+  calc.venusYears();
+  $('.venus-years').text(calc.planetYears);
+});
+$("#venus-life-expectancy").on("click", function() {
+  calc.venusLifeExpectancy();
+  $('.venus-expectancy').text(calc.planetExpectancy);
+});
+$("#mars-years").on("click", function() {
+  calc.marsYears();
+  $('.mars-years').text(calc.planetYears);
+});
+$("#mars-life-expectancy").on("click", function() {
+  calc.marsLifeExpectancy();
+  $('.mars-expectancy').text(calc.planetExpectancy);
+});
+$("#jupiter-years").on("click", function() {
+  calc.jupiterYears();
+  $('.jupiter-years').text(calc.planetYears);
+});
+$("#jupiter-life-expectancy").on("click", function() {
+  calc.jupiterLifeExpectancy();
+  $('.jupiter-expectancy').text(calc.planetExpectancy);
 });
