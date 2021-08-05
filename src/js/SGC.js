@@ -31,7 +31,7 @@ export class SuperGalacticAgeCalculator {
 
   mercuryLifeExpectancy(){
     this.mercuryYears();
-    let num = parseFloat((18.9 - this.planetYears).toFixed(1));
+    let num = parseFloat((9.12 - this.planetYears).toFixed(1));
     this.planetExpectancy = `your estimated life expectancy is ${num} Mercury years.`;
     if (num < 0) {
       num = Math.abs(num);
@@ -41,7 +41,7 @@ export class SuperGalacticAgeCalculator {
     
   venusLifeExpectancy(){
     this.venusYears();
-    let num = parseFloat((48.9 - this.planetYears).toFixed(1));
+    let num = parseFloat((23.56 - this.planetYears).toFixed(1));
     this.planetExpectancy = `your estimated life expectancy is ${num} Venus years.`;
     if (num < 0) {
       num = Math.abs(num);
@@ -51,7 +51,7 @@ export class SuperGalacticAgeCalculator {
 
   marsLifeExpectancy(){
     this.marsYears();
-    let num = parseFloat((148.1 - this.planetYears).toFixed(1));
+    let num = parseFloat((71.44 - this.planetYears).toFixed(1));
     this.planetExpectancy = `your estimated life expectancy is ${num} Mars years.`;
     if (num < 0) {
       num = Math.abs(num);
@@ -61,7 +61,7 @@ export class SuperGalacticAgeCalculator {
 
   jupiterLifeExpectancy(){
     this.jupiterYears();
-    let num = parseFloat((934.6 - this.planetYears).toFixed(1));
+    let num = parseFloat((450.68 - this.planetYears).toFixed(1));
     this.planetExpectancy = `your estimated life expectancy is ${num} Jupiter years.`;
     if (num < 0) {
       num = Math.abs(num);

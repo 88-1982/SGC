@@ -1,6 +1,6 @@
-# 
+# Super Galactic Age Calculator
 
-#### 
+#### SGC
 
 #### By DeAunte Hall
 
@@ -34,7 +34,38 @@ If a user has already surpassed the average life expectancy, return the number o
 
 ## Specifications
 
+describe('SuperGalacticAgeCalculator', () => {
+  let calc;
 
+  beforeEach(() => {
+    calc = new SuperGalacticAgeCalculator(38);
+  });
+
+test('should correctly create an instance of SuperGalacticAgeCalculator', () => {    
+    expect(calc.age).toEqual(38);
+  });
+
+test('should correctly return this.age * 0.24', () => {
+    calc.mercuryYears();
+    expect(calc.planetYears).toEqual(9.12);
+  });
+
+test('should correctly return this.age * 0.62', () => {
+    calc.venusYears();
+    expect(calc.planetYears).toEqual(23.56);
+  });
+
+test('should correctly return this.age * 1.88', () => {
+    calc.marsYears();
+    expect(calc.planetYears).toEqual(71.44);
+  });
+
+test('should correctly return this.age * 11.86', () => {
+    calc.jupiterYears();
+    expect(calc.planetYears).toEqual(9914.2);
+  });
+
+})
 
 
 ## Setup/Installation Requirements
