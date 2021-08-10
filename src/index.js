@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import SGC from './js/SGC.js';
+import {SuperGalacticAgeCalculator} from './js/SGC.js';
 
 let calc;
 $("#galactic-age").submit(function(event) {
