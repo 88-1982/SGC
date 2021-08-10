@@ -4,14 +4,32 @@
 
 #### By DeAunte Hall
 
-## Technologies Used
 
-* _HTML_
-* _JavaScript(ES6)_
-* _jQuery_
-* _Jest_
-* _webpack_
-* _eslint_
+
+## Technologies Used 
+
+* _Babel/core 7.6.4_
+* _Babel/plugin-transform-modules-commonjs 7.6.0_
+* _Bootstrap 4.5.0_
+* _clean-webpack-plugin 3.0.0_
+* _CSS_
+* _css-loader 3.2.0_
+* _eslint 6.3.0_
+* _eslint-loader 3.0.0_
+* _file-loader 1.1.6_
+* _gh-pages 3.1.0_
+* _HTML5_
+* _html-loader 0.5.5_
+* _html-webpack-plugin 3.2.0_
+* _JavaScript ES6_
+* _Jest 24.9.0_
+* _jQuery 3.5.1_
+* _Node Package Manager 6.14.9_
+* _popper.js 1.16.1_
+* _style-loader 1.0.0_
+* _webpack 4.39.3_
+* _webpack-cli 3.3.8_
+* _webpack-dev-server 3.11.2_
 
 ## Description
  A solar year lasts 365 days on planet Earth. However, the length of a solar year varies from planet to planet. For instance, a solar year on Mercury lasts 88 days. Write an application that determines a user's age based on a planet's solar years.
@@ -70,9 +88,6 @@ test('should correctly return this.age * 11.86', () => {
 
 ## Setup/Installation Requirements
 
-* _ Clone this repository to your desktop. 
-* _ Navigate to the top level of the directory.
-* _ Open in your browser
 
 
 ## Known Bugs
