@@ -65,4 +65,9 @@ test('should correctly return Mars years lived beyond Mars life expectancy', () 
   calc.marsLifeExpectancy();
   expect(calc.planetExpectancy).toEqual("Wow, you have lived 79 Mars years longer than the average Mars life expectancy!");
 });
+test('should correctly return Jupiter years lived beyond Jupiter life expectancy', () => {
+  calc = new SuperGalacticAgeCalculator(80);
+  calc.jupiterLifeExpectancy();
+  expect(calc.planetExpectancy).toEqual("Wow, you have lived 498.1 Jupiter years longer than the average Jupiter life expectancy!");
+});
 });
