@@ -33,7 +33,10 @@ test('should correctly return this.age * 11.86', () => {
   test('should correctly return life expectancy for this.age in Earth years', () => {
     calc.lifeExpectancy();
     expect(calc.planetExpectancy).toEqual("your estimated life expectancy is 40.9 Earth years.");
-
-})
+});
+test('should correctly return life expectancy for this.age in Venus years', () => {
+  calc.venusLifeExpectancy();
+  expect(calc.planetExpectancy).toEqual("your estimated life expectancy is 0 Venus years.");
+});
 
 });
