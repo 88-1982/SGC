@@ -50,5 +50,14 @@ test('should correctly return years lived beyond Earth life expectancy', () => {
   calc = new SuperGalacticAgeCalculator(80);
   calc.lifeExpectancy();
   expect(calc.planetExpectancy).toEqual("Wow, you have lived 1.1 Earth years longer than the average life expectancy!");
+});test('should correctly return Mercury years lived beyond Mercury life expectancy', () => {
+  calc = new SuperGalacticAgeCalculator(80);
+  calc.mercuryLifeExpectancy();
+  expect(calc.planetExpectancy).toEqual("Wow, you have lived 10.1 Mercury years longer than the average Mercury life expectancy!"); 
+});
+test('should correctly return Venus years lived beyond Venus life expectancy', () => {
+  calc = new SuperGalacticAgeCalculator(80);
+  calc.venusLifeExpectancy();
+  expect(calc.planetExpectancy).toEqual("Wow, you have lived 26 Venus years longer than the average Venus life expectancy!");
 });
 });
